@@ -14,8 +14,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #1f2937;
   }
 }
 
@@ -23,4 +23,14 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Mobile responsive improvements */
+@media (max-width: 768px) {
+  .mobile-sidebar-open {
+    display: block;
+  }
+  .mobile-sidebar-closed {
+    display: none;
+  }
 }
