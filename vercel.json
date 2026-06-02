@@ -2,26 +2,8 @@
   "version": 2,
   "builds": [
     {
-      "src": "package.json",
-      "use": "@vercel/next",
-      "config": {
-        "includeFiles": ["app/**/*"]
-      }
+      "src": "./package.json",
+      "use": "@vercel/next"
     }
-  ],
-  "routes": [
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
-  ],
-  "env": {
-    "NEXTAUTH_URL": "@nextauth_url",
-    "NEXTAUTH_SECRET": "@nextauth_secret",
-    "GOOGLE_CLIENT_ID": "@google_client_id",
-    "GOOGLE_CLIENT_SECRET": "@google_client_secret"
-  }
+  ]
 }
